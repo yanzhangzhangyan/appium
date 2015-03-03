@@ -25,13 +25,9 @@ $ sudo ./bin/authorize-ios.js # for ios only
 $ node .
 ```
 
-### Hacking on Appium
+### Appium 开发环境搭建
 
-Make sure you have ant, maven, adb installed and added to system PATH, also you
-would need the android-16 sdk (for Selendroid) and android-19 sdk installed.
-From your local repo's command prompt, install the following packages using the
-following commands (if you didn't install `node` using homebrew, you might have
-to run npm with sudo privileges):
+确保你安装了ant,maven,adb并且将他们加入到了系统环境变量PATH中,与此同时你还需要安装android-16 sdk(Selendroid)和android-19 sdk. 从你本地仓库的命令行提示，使用下边的命令安装如下包（如果你没有使用自制程序安装node ，则你必须使用sudo 权限运行npm）:
 
 ```center
 npm install -g mocha
@@ -40,25 +36,14 @@ node bin/appium-doctor.js --dev
 ./reset.sh --dev
 ```
 
-The first two commands install test and build tools (`sudo` may not be
-necessary if you installed node.js via Homebrew). The third command verifies
-that all of the dependencies are set up correctly (since dependencies for
-building Appium are different from those for simply running Appium) and fourth
-command installs all app dependencies and builds supporting binaries and test
-apps. `reset.sh` is also the recommended command to run after pulling changes
-from master. Running `reset.sh` with the `--dev` flag also installs git hooks
-that make sure code quality is preserved before committing. At this point,
-you're able to start the Appium server:
+前两个命令安装测试和构建工具（如果你已经通过自制程序安装了node.js就不需要sudo了）.第三个命令验证所有的依赖关系是否设置 正确（由于构建依赖关系不同于简单的运行Appium）第四个命令安装所有程序依赖关系和构建支持二进制文件和测试应用程序。reset.sh也是建议先从master上pull下改变后的内容再执行命令。运行reset.sh 加上--dev 标志同时安装git hooks以确保代码质量在提交时是被保存过的。此时，你可以启动Appium 服务:
 
 ```center
 node .
 ```
 
-See [the server documentation](/docs/en/writing-running-appium/server-args.md)
-for a full list of arguments.
-
-Like the power of automating dev tasks? Check out the [Appium Grunt tasks](/docs/en/contributing-to-appium/grunt.md)
-available to help with building apps, installing apps, generating docs, etc.
+看到完整的服务文档参数列表
+像自动化开发任务的力量？查看Appium Grunt tasks可以帮助构建应用程序,安装程序,生成文档,等等。.
 
 #### Hacking with Appium for iOS
 
