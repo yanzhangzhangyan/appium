@@ -42,8 +42,8 @@ node bin/appium-doctor.js --dev
 node .
 ```
 
-看到完整的服务文档参数列表
-像自动化开发任务的力量？查看Appium Grunt tasks可以帮助构建应用程序,安装程序,生成文档,等等。.
+查看完整的[服务文档](/docs/en/writing-running-appium/server-args.md)参数列表
+像自动化开发任务的力量？签出[Appium Grunt tasks](/docs/en/contributing-to-appium/grunt.md)可以帮助构建应用程序,安装程序,生成文档,等等。.
 
 #### Hacking with Appium for iOS
 
